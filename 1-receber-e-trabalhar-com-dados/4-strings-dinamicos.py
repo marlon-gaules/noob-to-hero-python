@@ -2,6 +2,7 @@ nome = "Marlon Costa e Sousa"
 email = "marlon.codar@gmail.com"
 print(f"Olá {nome}, seu cadastro com {email} foi realizado com sucesso!")
 
+# DESAFIO
 # Monte as palavras "bateria eletrônica" usando as sílabas como base
 b = "ba"
 parte2 = "nica"
