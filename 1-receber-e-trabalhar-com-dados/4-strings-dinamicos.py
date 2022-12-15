@@ -1,8 +1,3 @@
-# Exemplo abaixo de strings dinâmicos "mensagem personalizada";
-#   Quando faço cadastro em um site, e depois ele retorna (Olá Marlon, seja bem vindo!)
-
-# Após me cadastrar abaixo, e retornar para o usuário que deu tudo certo
-# O f "formatado" serve para criar strings dinâmicos
 nome = "Marlon Costa e Sousa"
 email = "marlon.codar@gmail.com"
 print(f"Olá {nome}, seu cadastro com {email} foi realizado com sucesso!")
