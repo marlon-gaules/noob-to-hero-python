@@ -1,3 +1,5 @@
+from datetime import datetime
+import random
 # PROJETO 1
 # Objetivo de projeto
 # * Estamos criando um módulo de login do nosso aplicativo, e você deve obter as seguintes informações do funcionário.
@@ -16,6 +18,28 @@ cartoes = ['R$50,00','R$250,00','R$120,00']
 
 5. Guarde informações sobre a data de aniversário do funcionário(dd/mm/aaaa)
  """
+nome = str(input("Qual o seu nome? "))
+print(nome)
+
+idade = int(input("Qual a sua idade? "))
+print(idade)
+
+# data_cadastro = (datetime.now())
+# print(data_cadastro)
+dia_cadastro = (datetime.now().day)
+mes_cadastro = (datetime.now().month)
+ano_cadastro = (datetime.now().year)
+data_cadastro = (f"{dia_cadastro}/{mes_cadastro}/{ano_cadastro}")
+print(data_cadastro)
+
+cartoes = ["R$50,00", "R$250,00", "R$120,00"]
+sorteamento = (random.choice(cartoes))
+valor_sorteado = sorteamento
+print(valor_sorteado)
+
+data_de_aniversario = datetime.strptime(
+    input("Informe a data de aniversário: "), "%d/%m/%Y")
+print(data_de_aniversario)
 
 # Módulo 2 - Gerar apresentação do usuário
 # Funcionalidades do módulo 2 - Mensagem de boas vindas!
@@ -25,3 +49,4 @@ cartoes = ['R$50,00','R$250,00','R$120,00']
 1. Olá (nome do usuário), seu registro foi concluído com sucesso no dia(data de cadastro no formato dd/mm/aaaa).
 
 Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de (valor sorteado). """
+print(f"Olá {nome}, seu registro foi concluído com sucesso no dia {data_cadastro}.\nParabéns, houve um sorteio e você ganhou um cartão de compras no valor de {valor_sorteado}")
